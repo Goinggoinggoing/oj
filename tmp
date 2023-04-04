@@ -1,0 +1,1 @@
+hour,minute,second=input('请输入一个时间（h:m:s）:\n').split(\":\")\nhour=int(hour)\nminute=int(minute)\nsecond=int(second)\nsecond+=30\nif second>=60:\n    second = second-60\n    minute += 1\nminute+=5\nif minute>=60:\n    minute = minute-60\n    hour += 1\nif hour==24:\n    hour = 0\nprint(\"{}:{}:{}\".format(hour,minute,second))\n
